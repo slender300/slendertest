@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "slendertest",
+  "version": "${version}",
+
+  "name": "Slender Mod",
+  "description": "This is an example description! Tell everyone what your mod is about!",
+  "authors": [
+    "Slender300"
+  ],
+  "contact": {
+    "homepage": "https://fabricmc.net/",
+    "sources": "https://github.com/FabricMC/fabric-example-mod"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/slendertest/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.slender300.slendertest.SlenderMod"
+    ],
+    "client": [
+      "net.slender300.slendertest.SlenderModClient"
+    ]
+  },
+  "mixins": [
+    "slendertest.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.6",
+    "fabric": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
