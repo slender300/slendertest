@@ -1,6 +1,8 @@
 package net.slender300.slendertest;
 
 import net.fabricmc.api.ModInitializer;
+import net.slender300.slendertest.item.ModItems;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -11,5 +13,6 @@ public class SlenderMod implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
+		ModItems.registerModItems();
 	}
 }
